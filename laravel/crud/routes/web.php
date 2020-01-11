@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/','welcome');
+
+Route::view('contato','contato');
+Route::view('sobre','sobre');
+
+
+Route::get('/clientes', 'ClientesController@list');
+
+
+/*Route::get( '/sobre', function(){
+
+    return "Sobre nós!";
+
 });
+*/
