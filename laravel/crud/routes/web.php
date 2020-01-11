@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','welcome');
+Route::view('/','home');
 
 Route::view('contato','contato');
 Route::view('sobre','sobre');
+Route::view('layout','layout.layout');
 
 
 Route::get('/clientes', 'ClientesController@list');

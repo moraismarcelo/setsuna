@@ -1,4 +1,4 @@
 @extends('layout.layout')
 @section('conteudo')
-<h1> Entre em contato!</h1>
+<h1>Bem vindo!</h1>
 @endsection

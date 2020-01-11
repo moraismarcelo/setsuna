@@ -3,18 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Cliente;
 class ClientesController extends Controller
 {
     public function list()
     {
-        $clientes = [
+        $clientes = Cliente::all();
 
-          "Marcelo",
-          "Sendy",
-          "Sophia"
-        ];
-
-        return view('clientes.clientes', ['clientes' => $clientes]);  
+        return view('clientes.clientes', ['clientes' => $clientes]);
     }
 }
