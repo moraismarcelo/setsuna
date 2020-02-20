@@ -11,9 +11,9 @@
     <h3>Editar cliente {{$cliente->nome}}</h3>
     <div class="box box-success">
 
-    <form action="/clientes/{{$cliente->id}}" method="POST">
+    <form action="{{$cliente->id}}" method="POST">
 
-        @method('PATCH')
+
 
         @include('clientes._form')
 
